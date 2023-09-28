@@ -1,0 +1,7 @@
+node_modules
+dist
+.dev.vars
+
+package-lock.json
+yarn.lock
+.wrangler
