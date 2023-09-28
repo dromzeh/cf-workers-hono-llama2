@@ -9,7 +9,7 @@ const app = new Hono<{ Bindings: Bindings }>();
 
 app.use('*', prettyJSON(), cors());
 
-app.post('/ai', async (c) => {
+app.post('/llama2', async (c) => {
     const ai = new Ai(c.env.AI);
 
     const formData = Object.fromEntries(await c.req.formData());
