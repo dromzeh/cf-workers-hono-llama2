@@ -6,6 +6,6 @@ export const formDataSchema = z.object({
             required_error: 'prompt is required',
             invalid_type_error: 'prompt must be a string',
         })
-        .min(10)
-        .max(100),
+        .min(2)
+        .max(400),
 });

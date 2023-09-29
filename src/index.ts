@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { prettyJSON } from 'hono/pretty-json';
 import { Ai } from '@cloudflare/ai';
-import { Bindings } from './types/types';
+import { Bindings } from './types/bindings';
 import { formDataSchema } from './schema/form-schema';
 
 const app = new Hono<{ Bindings: Bindings }>();
